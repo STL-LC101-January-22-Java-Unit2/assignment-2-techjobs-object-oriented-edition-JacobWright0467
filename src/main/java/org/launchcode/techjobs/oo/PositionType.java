@@ -1,19 +1,23 @@
 package org.launchcode.techjobs.oo;
 
-public class PositionType {
+public class PositionType extends JobField {
 
-    private int id;
-    private static int nextId = 1;
-    private String value;
-
-    public PositionType() {
-        id = nextId;
-        nextId++;
-    }
+//    private int id;
+//    private static int nextId = 1;
+//    private String value;
+//
+//    public PositionType() {
+//        id = nextId;
+//        nextId++;
+//    }
+//
+//    public PositionType(String value) {
+//        this();
+//        this.value = value;
+//    }
 
     public PositionType(String value) {
-        this();
-        this.value = value;
+        super(value);
     }
 
     // TODO: Add a custom toString() method that returns the data stored in 'value'.
@@ -47,16 +51,16 @@ public class PositionType {
 
     // Getters and Setters:
 
-    public int getId() {
-        return id;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public String getValue() {
+//        return value;
+//    }
+//
+//    public void setValue(String value) {
+//        this.value = value;
+//    }
 
 }
